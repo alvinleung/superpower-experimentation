@@ -8,7 +8,7 @@ type Props = {
 const GlassCard = ({ children }: Props) => {
   const cardWidth = 285;
   const cardHeight = 232;
-  const blurSize = 285 / 2.5;
+  const blurSize = 285 / 2.3;
 
   const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -31,7 +31,7 @@ const GlassCard = ({ children }: Props) => {
       onPointerLeave={() => setIsHovering(false)}
     >
       <div
-        className="absolute top-0 left-0 bg-[#F7861e] blur-3xl pointer-events-none"
+        className="absolute top-0 left-0 bg-[#F7861e] blur-2xl pointer-events-none"
         style={{
           width: blurSize,
           height: blurSize,
